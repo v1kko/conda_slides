@@ -1,4 +1,4 @@
-# Excercises for environments
+# Exercises for environments
 
 ### Create workspace for Conda environments
 
@@ -36,7 +36,7 @@ conda create --name my_env python=3.6 pandas
 conda activate my_env #activate the newly created environment
 ```
 
-## Excercise 1
+## Exercise 1
 1. Create a new environment called “machine-learning-env” with Python and the most current versions of IPython, Matplotlib, Pandas, Numba and Scikit-Learn.
 2. How would you specify a specific version of python to work with in this environment ? 
 
@@ -55,7 +55,7 @@ Link to conda commands: [Conda general commands](https://docs.conda.io/projects/
  scikit-learn \
  numba
 ```
-## Excercise 2
+## Exercise 2
 Dask provides advanced parallelism for data science workflows enabling performance at scale for the core Python data science tools such as Numpy Pandas, and Scikit-Learn. Have a read through the [official documentation](https://docs.conda.io/projects/conda/en/latest/commands.html) for the `conda install` command and see if you can figure out how to install Dask into the `machine-learning-env` that you created in the previous challenge.
 
 ### possible solution (dont post immediately)
@@ -80,7 +80,7 @@ Dask provides advanced parallelism for data science workflows enabling performan
 - Uses the `--prefix` argument instead of the `--name` argument
 
 
-## Excercise 3
+## Exercise 3
 First create a project directory called project-dir using the following command.
 ```bash
 $ mkdir project-dir
@@ -116,7 +116,7 @@ $ conda create --prefix ./env \
 > r-sparklyr \
 ~~~
 
-## Excercise 4
+## Exercise 4
 
 Create a new directory called `r-project-dir`{: .ic}.
 Take a look at the [list of R packages](https://anaconda.org/r/repo) available by default for installation. Finally create a new local conda environment within the `r-project-dir`{: .ic} with some R packages (you choose!).
@@ -128,4 +128,4 @@ $ conda remove --name my_env --all
 $ conda remove --prefix /path/to/local/env --all
 ```
 
-As a last excercise, clean up all environments and local environments!
+As a last exercise, clean up all environments and local environments!
