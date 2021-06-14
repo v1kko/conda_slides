@@ -22,6 +22,29 @@ title: "Using Packages and Channels"
 
 ---
 
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.
+├── bin
+│   └── convert-caffe2-to-onnx
+│   └── convert-onnx-to-caffe2
+├── info
+│   ├── LICENSE.txt
+│   ├── about.json
+│   ├── files
+│   ├── git
+│   ├── has_prefix.json
+│   ├── hash_input.json
+│   ├── index.json
+│   ├── paths.json
+│   ├── recipe/
+│   └── test/
+└── lib
+    └── python3.6
+        └── site-packages
+            ├── caffe2/
+            ├── torch/
+            └── torch-1.1.0-py3.6.egg-info/
+</pre></div>
+</div>
 
 
 ---

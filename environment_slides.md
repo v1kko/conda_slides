@@ -29,11 +29,11 @@ title: "Introduction to conda"
 
 - What would you use environments for?
  
-  - https://hackmd.io/@Uq1CWlKHSA-BBaTuPwE06g/HywQN705_/edit
+  - tinyurl.com/3ejxxb7a
 
 ---
 
-<section data-background-iframe="https://hackmd.io/@Uq1CWlKHSA-BBaTuPwE06g/HywQN705_/edit"
+<section data-background-iframe="https://hackmd.io/@Uq1CWlKHSA-BBaTuPwE06g/ByYDT9xsO/edit"
           data-background-interactive>
 </section>
 
