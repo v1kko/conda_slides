@@ -94,6 +94,36 @@ Search for a package in a specific channel
 $ conda install scipy=1.6 --channel conda-forge --channel bioconda
 ```
 
+
+# Exercise 1
+
+Like many projects, PyTorch has its own channel on Anaconda Cloud. This channel has several interesting packages, in particular pytorch (PyTorch core) and torchvision (datasets, transforms, and models specific to computer vision).
+
+Create a new directory called my-computer-vision-project and then create a Python 3.6 environment in a sub-directory called env/ with the two packages listed above. Also include the most recent version of jupyterlab in your environment (so you have a nice UI) and matplotlib (so you can make plots).
+
+## Answer (dont post immediately)
+
+```bash
+$ mkdir my-computer-vision-project
+$ cd my-computer-vision-project/
+$ conda create --prefix ./env --channel pytorch \
+ python=3.6 \
+ jupyterlab=1.0 \
+ pytorch=1.1 \
+ torchvision=0.3 \
+ matplotlib=3.1
+```
+
 ## What happens when you install a package?
 
 [Installation of a conda package](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/installing-with-conda.html)
+
+
+## Conda (+Pip): Conda wherever possible; Pip only when necessary
+
+When using Conda to manage environments for your Python project it is a good idea to install packages available via both Conda and Pip using Conda; however there will always be cases where a package is only available via Pip in which case you will need to use Pip. Many of the common pitfalls of using Conda and Pip together can be avoided by adopting the following practices.
+
+- Always explicitly install pip in every Python-based Conda environment.
+- Always be sure your desired environment is active before installing anything using pip.
+- Prefer `python -m pip install` over `pip install`; never use `pip` with the `--user` argument.
+
